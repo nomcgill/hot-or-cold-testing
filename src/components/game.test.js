@@ -7,8 +7,14 @@ describe('<Game />', () => {
     it('Renders without crashing', () =>{
         shallow(<Game />);
     })
-    // it('Renders the add button initially', () => {
-    //     const wrapper = shallow(<Game />);
-    //     expect(wrapper.hasClass('add-button')).toEqual(true);
-    // });
+    it('generates correct answer greater than 0', () => {
+        const wrapper = shallow(<Game />);
+        expect(wrapper.state().correctAnswer).toBeGreaterThan(0);
+    });
+    it('generates correct answer 100 or less', () => {
+        const wrapper = shallow(<Game />);
+        expect(wrapper.state().correctAnswer).toBeLessThanOrEqual(100);
+    });
 })
+
+
