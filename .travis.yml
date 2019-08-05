@@ -1,0 +1,12 @@
+language: node_js
+node_js: node
+cache:
+  directories:
+  - node_modules
+env:
+- CI=true
+deploy:
+  app: dry-earth-49689
+  provider: heroku
+  api_key:
+    secure: FtiWuqBT+qkQi+v6GPMlQuxMbe7HxWLBBPPLvxtxWrX3WXJ/s2Fov4UXwouuLxzdjPD4szqg0Q1j/qKY8FBOOJ6OdD2A8ATazrmPkUGv7JdSttCLMc0mQw+ATAcKXlkVhv1TVNwb6MLzwZzYRrBKvyxu8K7MKF84ToCfahhjM0tAAxho/LCSrX7Hw22WABFLgCrLlXBXYUja6eiiVH9obphRPTp5aZEV/CVIdzrXw1GBzERttu4BKgZcu7HAx9TYofo5a01RTpWvvL8/J78JvQXHyk2swHVWQUnNM1ZqLakkbc3qdVMHIiU419V4KKlb3y3tRrY50XaLXYaEyK+f/vvcCtOu741whEUbI98Zca+6Rx7yCSLscM428Y81R0DpUdlANt0X8vZwNFiA6DH+ZbJf/jwwBH1Pnc1Nd+WILtb1nhW+A8cKirpzbP+h5MQ52Iy3WEzINwdTsSneqI2TbrG0xQ21mMDVjnV/N0zFAt60ditO9uKuiJVYuT5M0ElZxgNg9Zh8rRYfJUGyfbO5OGSRZ6PPu9XOXksIiimNPPx2zHR4o9DDx4+hzr7F1OXld23u7c3WsNWHSNypGXCPCEqGXygOJ27w8NKqQ5rcmfrin33o8yAvgfBVGK0KN4ojtRWvkvNvmif3TijLmYt8ebf23ojQOOevnWMafkaINRM=
